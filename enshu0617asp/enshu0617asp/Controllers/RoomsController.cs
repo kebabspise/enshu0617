@@ -27,7 +27,7 @@ public class RoomsController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
         var room = await _context.Rooms.FindAsync(id);
@@ -37,7 +37,7 @@ public class RoomsController : ControllerBase
         return NoContent();
     }
 
-    [HttpPut]
+    [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, Room room)
     {
         if(id != room.ID) return BadRequest();

@@ -28,7 +28,7 @@
   {
     "ContainingType": "RoomsController",
     "Method": "Delete",
-    "RelativePath": "api/Rooms",
+    "RelativePath": "api/Rooms/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -36,7 +36,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -44,7 +44,7 @@
   {
     "ContainingType": "RoomsController",
     "Method": "Update",
-    "RelativePath": "api/Rooms",
+    "RelativePath": "api/Rooms/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -52,7 +52,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "room",
