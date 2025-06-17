@@ -1,5 +1,5 @@
 ﻿using enshu0617asp.Models;
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace enshu0617asp.Data
 {
@@ -10,3 +10,4 @@ namespace enshu0617asp.Data
         public DbSet<Room> Rooms { get; set; }
 
     }
+}
